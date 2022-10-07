@@ -1,3 +1,5 @@
+--it is table by default from dbt_project.yml so no need to configure
+
 select
     productid,
     productname,

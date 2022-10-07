@@ -1,0 +1,14 @@
+ #yml file to document the source data files so that in case of any name change, we don't have to do multiple changes
+
+
+version: 2
+
+sources: 
+  - name: globalmart
+    database: raw
+    schema: globalmart
+    tables:
+      - name: customer
+      - name: orders
+      - name: product
+          
