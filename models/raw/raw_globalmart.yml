@@ -1,4 +1,4 @@
-#testing taw_customer.sql
+#testing SQLs
 
 version: 2
 
@@ -9,3 +9,17 @@ models:
         tests:
           - unique
           - not_null
+  - name: raw_orders
+    columns:
+      - name: orderid
+        tests:
+          - unique
+          - not_null
+      - name: shipmode
+        tests: 
+          - accepted_values:
+              values:
+                - 'First Class'
+                - 'Same Day'
+                - 'Second Class'
+                - 'Standard Class'
